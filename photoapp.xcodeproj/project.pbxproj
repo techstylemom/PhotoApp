@@ -20,6 +20,9 @@
 		5251730926D8A1F60051695C /* photoappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251730826D8A1F60051695C /* photoappTests.swift */; };
 		5251731426D8A1F60051695C /* photoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5251731326D8A1F60051695C /* photoappUITests.swift */; };
 		5251732526D8ADF10051695C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5251732426D8ADF10051695C /* GoogleService-Info.plist */; };
+		52DF2E7B26DA0264004C8F32 /* PhotoUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2E7A26DA0264004C8F32 /* PhotoUser.swift */; };
+		52DF2E8026DA0294004C8F32 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2E7F26DA0294004C8F32 /* UserService.swift */; };
+		52DF2E8526DA10CA004C8F32 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DF2E8426DA10CA004C8F32 /* Constants.swift */; };
 		58D4223402DD7412AE901642 /* Pods_photoappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1921BA126AA4E9F018DD897 /* Pods_photoappTests.framework */; };
 		D3CDFB4EEB160BC2FFA76B18 /* Pods_photoapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2836E08E873A2CCBF5323E6 /* Pods_photoapp.framework */; };
 		E9FBB56CDA690508FBD225E4 /* Pods_photoapp_photoappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6B4DF7F61367C6F15EAB0B /* Pods_photoapp_photoappUITests.framework */; };
@@ -63,6 +66,9 @@
 		5251731326D8A1F60051695C /* photoappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoappUITests.swift; sourceTree = "<group>"; };
 		5251731526D8A1F60051695C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5251732426D8ADF10051695C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52DF2E7A26DA0264004C8F32 /* PhotoUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUser.swift; sourceTree = "<group>"; };
+		52DF2E7F26DA0294004C8F32 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		52DF2E8426DA10CA004C8F32 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5B2E4DCC5C842DD28F2CEAF4 /* Pods-photoapp-photoappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoapp-photoappUITests.debug.xcconfig"; path = "Target Support Files/Pods-photoapp-photoappUITests/Pods-photoapp-photoappUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C3901299E22ABA0129CCD55 /* Pods-photoappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoappTests.debug.xcconfig"; path = "Target Support Files/Pods-photoappTests/Pods-photoappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8225E24C5D5518C83BE2A4A2 /* Pods-photoappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoappTests.release.xcconfig"; path = "Target Support Files/Pods-photoappTests/Pods-photoappTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 		5225C85026D8CBBF009F2874 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				52DF2E7F26DA0294004C8F32 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -133,6 +140,7 @@
 		5225C85426D8CBDE009F2874 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				52DF2E8426DA10CA004C8F32 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 		5225C85926D8CBF2009F2874 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				52DF2E7A26DA0264004C8F32 /* PhotoUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,10 +201,10 @@
 				525172F326D8A1F20051695C /* SceneDelegate.swift */,
 				5225C84F26D8CB94009F2874 /* Storyboards */,
 				5225C85A26D8CBFA009F2874 /* ViewControllers */,
+				5225C85026D8CBBF009F2874 /* Services */,
 				5225C85926D8CBF2009F2874 /* Models */,
 				5225C85826D8CBE8009F2874 /* Views */,
 				5225C85426D8CBDE009F2874 /* Helpers */,
-				5225C85026D8CBBF009F2874 /* Services */,
 				525172FA26D8A1F60051695C /* Assets.xcassets */,
 				5251732426D8ADF10051695C /* GoogleService-Info.plist */,
 				525172FF26D8A1F60051695C /* Info.plist */,
@@ -508,7 +517,10 @@
 			files = (
 				5225C86426D8CCB9009F2874 /* CreateProfileViewController.swift in Sources */,
 				5225C85C26D8CC41009F2874 /* LoginViewController.swift in Sources */,
+				52DF2E8026DA0294004C8F32 /* UserService.swift in Sources */,
 				5225C87326D8DB14009F2874 /* SettingsViewController.swift in Sources */,
+				52DF2E7B26DA0264004C8F32 /* PhotoUser.swift in Sources */,
+				52DF2E8526DA10CA004C8F32 /* Constants.swift in Sources */,
 				5225C86926D8DA8E009F2874 /* FeedViewController.swift in Sources */,
 				525172F226D8A1F20051695C /* AppDelegate.swift in Sources */,
 				525172F426D8A1F20051695C /* SceneDelegate.swift in Sources */,
