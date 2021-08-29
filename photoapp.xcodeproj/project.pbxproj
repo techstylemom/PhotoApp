@@ -12,6 +12,7 @@
 		5225C86926D8DA8E009F2874 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225C86826D8DA8E009F2874 /* FeedViewController.swift */; };
 		5225C86E26D8DB06009F2874 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225C86D26D8DB06009F2874 /* CameraViewController.swift */; };
 		5225C87326D8DB14009F2874 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225C87226D8DB14009F2874 /* SettingsViewController.swift */; };
+		5237884A26DB88F90069F053 /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5237884926DB88F90069F053 /* LocalStorageService.swift */; };
 		525172F226D8A1F20051695C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525172F126D8A1F20051695C /* AppDelegate.swift */; };
 		525172F426D8A1F20051695C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525172F326D8A1F20051695C /* SceneDelegate.swift */; };
 		525172F926D8A1F20051695C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525172F726D8A1F20051695C /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		5225C86826D8DA8E009F2874 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		5225C86D26D8DB06009F2874 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		5225C87226D8DB14009F2874 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5237884926DB88F90069F053 /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
 		525172EE26D8A1F20051695C /* photoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525172F126D8A1F20051695C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525172F326D8A1F20051695C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				52DF2E7F26DA0294004C8F32 /* UserService.swift */,
+				5237884926DB88F90069F053 /* LocalStorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				525172F226D8A1F20051695C /* AppDelegate.swift in Sources */,
 				525172F426D8A1F20051695C /* SceneDelegate.swift in Sources */,
 				5225C86E26D8DB06009F2874 /* CameraViewController.swift in Sources */,
+				5237884A26DB88F90069F053 /* LocalStorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
