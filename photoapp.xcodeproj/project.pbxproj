@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521948C826DD7C740021EA26 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521948C726DD7C740021EA26 /* MainTabBarController.swift */; };
 		5225C85C26D8CC41009F2874 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225C85B26D8CC41009F2874 /* LoginViewController.swift */; };
 		5225C86426D8CCB9009F2874 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225C86326D8CCB9009F2874 /* CreateProfileViewController.swift */; };
 		5225C86926D8DA8E009F2874 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225C86826D8DA8E009F2874 /* FeedViewController.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		388412BE3BDEAA2F9483D0A1 /* Pods-photoapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoapp.debug.xcconfig"; path = "Target Support Files/Pods-photoapp/Pods-photoapp.debug.xcconfig"; sourceTree = "<group>"; };
+		521948C726DD7C740021EA26 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5225C85B26D8CC41009F2874 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5225C86326D8CCB9009F2874 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		5225C86826D8DA8E009F2874 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				5225C86826D8DA8E009F2874 /* FeedViewController.swift */,
 				5225C86D26D8DB06009F2874 /* CameraViewController.swift */,
 				5225C87226D8DB14009F2874 /* SettingsViewController.swift */,
+				521948C726DD7C740021EA26 /* MainTabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 			files = (
 				5225C86426D8CCB9009F2874 /* CreateProfileViewController.swift in Sources */,
 				5225C85C26D8CC41009F2874 /* LoginViewController.swift in Sources */,
+				521948C826DD7C740021EA26 /* MainTabBarController.swift in Sources */,
 				52DF2E8026DA0294004C8F32 /* UserService.swift in Sources */,
 				5225C87326D8DB14009F2874 /* SettingsViewController.swift in Sources */,
 				52DF2E7B26DA0264004C8F32 /* PhotoUser.swift in Sources */,

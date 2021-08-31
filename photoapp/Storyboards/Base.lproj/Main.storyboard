@@ -62,7 +62,7 @@
                             <constraint firstItem="sQh-20-TTv" firstAttribute="trailing" secondItem="agJ-7x-uIV" secondAttribute="trailing" id="tJx-SA-K3t"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" id="S7c-rg-8V3"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Feed" id="S7c-rg-8V3"/>
                     <connections>
                         <outlet property="tableView" destination="agJ-7x-uIV" id="ojH-iH-oBK"/>
                     </connections>
@@ -81,7 +81,7 @@
                         <viewLayoutGuide key="safeArea" id="60u-Ma-TnZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add" id="6OB-SA-4XC"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Add" id="6OB-SA-4XC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obl-Ch-h9c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,16 +110,16 @@
                             <constraint firstItem="9gg-XV-9kC" firstAttribute="centerX" secondItem="KMJ-qG-gj3" secondAttribute="centerX" id="ggI-BF-TrF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="mxK-aD-lm6"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="Settings" id="mxK-aD-lm6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fa3-bh-4Q6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1761" y="1610"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="i8s-dk-nqu">
             <objects>
-                <tabBarController storyboardIdentifier="mainTabBarController" id="1aH-EB-Bwb" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainTabBarController" id="1aH-EB-Bwb" customClass="MainTabBarController" customModule="photoapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LJ5-5j-e5R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
