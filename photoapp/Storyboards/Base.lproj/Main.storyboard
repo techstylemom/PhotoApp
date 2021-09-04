@@ -51,6 +51,51 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="agJ-7x-uIV">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PhotoCell" rowHeight="300" id="Ovj-5T-VSK" customClass="PhotoCell" customModule="photoapp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ovj-5T-VSK" id="shc-lx-jUL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVt-zj-uUb">
+                                                    <rect key="frame" x="40" y="31" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IxB-LX-QSD">
+                                                    <rect key="frame" x="40" y="62" width="334" height="176"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="176" id="P8M-i0-B9K"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gy7-Mb-Rkc">
+                                                    <rect key="frame" x="40" y="248" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Gy7-Mb-Rkc" firstAttribute="leading" secondItem="shc-lx-jUL" secondAttribute="leadingMargin" constant="20" id="90q-5Z-ylM"/>
+                                                <constraint firstItem="IxB-LX-QSD" firstAttribute="top" secondItem="gVt-zj-uUb" secondAttribute="bottom" constant="10" id="Fke-G6-x46"/>
+                                                <constraint firstItem="gVt-zj-uUb" firstAttribute="leading" secondItem="shc-lx-jUL" secondAttribute="leadingMargin" constant="20" id="HQx-lx-VI5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IxB-LX-QSD" secondAttribute="trailing" constant="20" id="IG3-kf-gEY"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Gy7-Mb-Rkc" secondAttribute="bottom" constant="20" id="Q5o-uw-bcJ"/>
+                                                <constraint firstItem="Gy7-Mb-Rkc" firstAttribute="top" secondItem="IxB-LX-QSD" secondAttribute="bottom" constant="10" id="a4R-ao-6ct"/>
+                                                <constraint firstItem="gVt-zj-uUb" firstAttribute="top" secondItem="shc-lx-jUL" secondAttribute="topMargin" constant="20" id="abJ-ae-ne6"/>
+                                                <constraint firstItem="IxB-LX-QSD" firstAttribute="leading" secondItem="shc-lx-jUL" secondAttribute="leadingMargin" constant="20" id="x7V-cl-31G"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="Gy7-Mb-Rkc" id="aPi-G6-MNs"/>
+                                            <outlet property="photoImageView" destination="IxB-LX-QSD" id="RDI-zp-WUh"/>
+                                            <outlet property="usernameLabel" destination="gVt-zj-uUb" id="06z-vx-9mk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sQh-20-TTv"/>
@@ -78,10 +123,47 @@
                     <view key="view" contentMode="scaleToFill" id="uEP-2B-kMj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="S5Z-0a-DBZ">
+                                <rect key="frame" x="20" y="350" width="374" height="196.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Complete!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2p1-eX-Pem">
+                                        <rect key="frame" x="118.5" y="0.0" width="137.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="02W-UV-Jx4">
+                                        <rect key="frame" x="20" y="91.5" width="334" height="4"/>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auc-cd-47M">
+                                        <rect key="frame" x="148" y="166.5" width="78" height="30"/>
+                                        <state key="normal" title="Go To Feed"/>
+                                        <connections>
+                                            <action selector="doneTapped:" destination="EE0-Iz-fXM" eventType="touchUpInside" id="GAF-pb-hii"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="02W-UV-Jx4" firstAttribute="leading" secondItem="S5Z-0a-DBZ" secondAttribute="leading" constant="20" id="b8C-bQ-ZW2"/>
+                                    <constraint firstAttribute="trailing" secondItem="02W-UV-Jx4" secondAttribute="trailing" constant="20" id="oDJ-wf-Ai5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="60u-Ma-TnZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S5Z-0a-DBZ" firstAttribute="centerY" secondItem="uEP-2B-kMj" secondAttribute="centerY" id="331-ej-Mlc"/>
+                            <constraint firstItem="60u-Ma-TnZ" firstAttribute="trailing" secondItem="S5Z-0a-DBZ" secondAttribute="trailing" constant="20" id="Uc0-2x-MTx"/>
+                            <constraint firstItem="S5Z-0a-DBZ" firstAttribute="leading" secondItem="60u-Ma-TnZ" secondAttribute="leading" constant="20" id="ZDj-YL-xLm"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Add" id="6OB-SA-4XC"/>
+                    <connections>
+                        <outlet property="doneButton" destination="Auc-cd-47M" id="Uy2-x7-2YX"/>
+                        <outlet property="progressBar" destination="02W-UV-Jx4" id="S2a-yD-TVX"/>
+                        <outlet property="progressLabel" destination="2p1-eX-Pem" id="k5c-cq-R7f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obl-Ch-h9c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

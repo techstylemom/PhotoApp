@@ -13,6 +13,8 @@ struct Constants {
         static let profileSegue = "goToCreateProfile"
         static let tabBarController = "mainTabBarController"
         static let loginNavController = "loginNavController"
+        
+        static let photoCellId = "PhotoCell"
     }
     
     struct LocalStorage {

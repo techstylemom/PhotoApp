@@ -92,10 +92,23 @@ extension MainTabBarController: UIImagePickerControllerDelegate, UINavigationCon
         // Check if the selected image is not nil
         if let selectedImage = selectedImage {
             
-            // Upload the photo
+            // Get a reference to the camera controller vc
+            let cameraVC = self.selectedViewController as? CameraViewController
+            
+            if let cameraVC = cameraVC {
+                
+                // Upload the photo
+                cameraVC.savePhoto(image: selectedImage)
+            }
         }
         
         // Dismiss the image picker
         dismiss(animated: true, completion: nil)
-    } 
+    }
+    
+    func goToFeed() {
+        
+        // Switch tab to the first one
+        selectedIndex = 0
+    }
 }
